@@ -1,0 +1,85 @@
+<style>
+  /*image circle animation*/
+.circle-container {
+  display: inline-block; 
+}
+
+/* Circle style */
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;       
+  overflow: hidden;
+  display: inline-block; 
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid; #555;
+  box-shadow: 1px 3px 10px white;
+  transition: all 0.5s ease;
+}
+.circle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  z-index: 2;
+}
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.6s ease;
+}
+.circle:hover img {
+  transform: scale(1.6) rotate(360deg);
+  transform: 0.9s;
+}
+/*====================================*/
+/*Lynora....animation*/
+#ani1 {
+    width: 290px;
+    height: 70px;
+    border: none;
+  }
+
+  .animation1 {
+    width: 20vw;
+    height: 60px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    margin: 10px 0;
+    position: relative;
+    animation: dhulo 5s linear 1s infinite alternate;
+  }
+  .animation1:hover{
+    background: #222;
+    transform: scale(1.5);
+    transition: 0.9s ease-in all;
+    color: wheat;
+    box-shadow: 1px 2px 4px 0px wheat;
+  }
+
+  @keyframes dhulo {
+    from {
+      top: 0;
+      left: 0;
+    }
+    to {
+      top: 0;
+      left: 700px;
+      transform: rotate(1deg);
+      
+    }
+  }
+</style>
+  

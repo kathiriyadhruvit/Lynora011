@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Signup--in..</title>
+  <link rel="stylesheet" type="text/css" href="css/signin.css">
+</head>
+<body>
+   <h1 id="closebtn"><img src="img/close.svg" alt="Close" id="close"></h1>
+  <div class="wrap">
+    <div class="left-card">
+      <div class="image-panel">
+        <div class="photo"></div>
+      </div>
+
+      <div class="left-footer">
+        Lyonra,<br>
+        <p>VICTORIA'S SECRET</p>
+      </div>
+    </div>
+
+    <div class="right-card">
+      <div>
+        <h1 class="title">Create an account</h1>
+        <div class="subtitle">Already have an account? <a href="Login.php" style="color:wheat; text-decoration:none; font-weight:60">Login</a></div>
+      </div><br>
+
+      <form action="php/signin.php" method="post">
+        <div style="margin-bottom:12px">
+          <div style="flex:1" class="field">
+            <input type="text" placeholder="First name" name="Name">
+          </div>
+          <div style="flex:1" class="field">
+            <input type="text" placeholder="Mobile Number" name="Mnumber">
+          </div>
+        </div>
+
+        <div class="field">
+          <input type="email" placeholder="Email" name="Email" required>
+        </div>
+
+        <div class="field">
+          <input type="password" placeholder="Enter password" name="Password" required>
+        </div>
+
+        <label class="checkbox"><input type="checkbox"> I agree to the Terms &amp; Conditions</label>
+
+        <button class="btn">Create account</button>
+
+        <div class="divider" style="margin-top:16px">or continue with</div>
+
+        <div class="socials" style="max-width:360px">
+         <center> <div class="social">Google</div></center>
+        </div>
+<br>
+        <div class="have-account">By signing up you agree to our <a href="#" style="background: blue; color: white;">Privacy Policy</a>.</div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+<script type="text/javascript">
+  const closebtn=document.querySelector("#closebtn").addEventListener("click",function(){
+    window.location.href="one.php";
+  });
+
+</script>

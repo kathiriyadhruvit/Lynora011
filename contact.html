@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: url("img/contact1.jpg") no-repeat center center;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    .contact {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 30px 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      background:#eee;
+      border-radius: 12px;
+      position: relative;
+    }
+
+    /* close button */
+    #closebtn {
+      position: absolute;
+      top: -80px;
+      height: 200px;
+      right: 1px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    #closebtn img {
+      width: 50px;
+      height: 50px;
+    }
+
+    /* left */
+    .left h1 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-weight: 700;
+      font-size: 42px;
+      margin: 0 0 18px;
+    }
+    .left p {
+      margin: 4px 0;
+      color: black;
+    }
+    .left .socials {
+      margin-top: 20px;
+      display: flex;
+      gap: 16px;
+    }
+    .socials a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      text-decoration: none;
+      background: #fff8;
+      color: black;
+      border: 2px solid black;
+      transition: 0.3s;
+    }
+    .socials a:hover {
+      transform: scale(1.2);
+      background: black;
+      color: wheat;
+      box-shadow: 0 6px 14px rgba(0,0,0,.2);
+    }
+
+    /* right */
+    .note {
+      color: black;
+      margin: 6px 0 14px;
+      font-size: 14px;
+    }
+    form {
+      display: grid;
+      gap: 12px;
+    }
+    .field {
+      background: #fff;
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 12px;
+      font: inherit;
+      color: #222;
+      outline: none;
+      width: 100%;
+    }
+    .field::placeholder { color: #aaa; }
+    .field:hover {
+      background: #fffdf8;
+      border-color: #b5b5b5;
+    }
+    .field:focus {
+      border-color: black;
+      box-shadow: 1px 2px 3px 1px grey;
+      background: #fff;
+    }
+    textarea.field {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .btn {
+      width: 120px;
+      padding: 10px 14px;
+      border: 1px solid #b89559;
+      background: #c3a572;
+      color: #222;
+      border-radius: 4px;
+      text-transform: lowercase;
+      letter-spacing: .5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      box-shadow: 1px 2px black;
+      background: #d1b581;
+      transform: translateY(-2px);
+    }
+    .btn:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+
+<section class="contact">
+  <!-- Close Button -->
+  <button id="closebtn">
+    <img src="img/close.svg" alt="Close">
+  </button>
+
+  <!-- Left side -->
+  <div class="left">
+    <h1>Contact Us</h1>
+    <p>Lynora is e-commerce website in India:</p>
+    <p>Junagadh clg road,<br>pin:-362001</p>
+    <p>Phone: 1234567890</p>
+    <p>Email: lynora01@gmail.com</p>
+
+    <div class="socials" aria-label="social links">
+      <a href="#" title="Facebook">f</a>
+      <a href="#" title="Twitter">t</a>
+      <a href="#" title="Instagram">ig</a>
+      <a href="#" title="Google">g+</a>
+    </div>
+  </div>
+
+  <!-- Right side -->
+  <div class="right">
+    <p class="note">Great vision without great people is irrelevant. <br>Let’s work together.</p>
+    <form action="" method="post" novalidate>
+      <label>
+        <input class="field" type="text" name="name" placeholder="Enter your Name" required>
+      </label>
+      <label>
+        <input class="field" type="email" name="email" placeholder="Enter a valid email address" required>
+      </label>
+      <label>
+        <textarea class="field" name="message" placeholder="Enter your message" required></textarea>
+      </label>
+      <button class="btn" type="submit">submit</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  document.querySelector("#closebtn").addEventListener("click", function() {
+    window.location.href = "one.html";
+  });
+</script>
+
+</body>
+</html>
